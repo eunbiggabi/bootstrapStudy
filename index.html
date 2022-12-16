@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TestBootstrapOnNPM</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button onclick="alert('click')">Click 1</button>
+    <button onclick="sayHello()">Click 2</button>
+    <button id="btn">Click 3</button>
+    <script>
+      function sayHello() {
+        alert('hello');
+      }
+
+      const el = document.getElementById('btn');
+      el.onclick = sayHello;
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
